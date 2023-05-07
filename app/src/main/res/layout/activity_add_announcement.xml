@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="20dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/uploadimg"
+                android:id="@+id/uploadImage"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:id="@+id/metin_baslik"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mezunapp_border"
+                android:padding="8dp"
+                android:hint="Duyuru Başlığı"
+                android:drawablePadding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="280dp"
+                android:gravity="top|start"
+                android:id="@+id/metin_duyuru"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mezunapp_border"
+                android:paddingLeft="8dp"
+                android:paddingTop="10dp"
+                android:hint="Duyuru Metni"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:id="@+id/metin_sontarih"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mezunapp_border"
+                android:padding="8dp"
+                android:hint="Duyuru ne zamana kadar yayınlanacak ?(GG/AA/YYYY)"
+                android:drawablePadding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/upload_button"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:text="Duyuruyu Paylaş"
+                android:background="@drawable/button_type1"
+                android:typeface="monospace"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

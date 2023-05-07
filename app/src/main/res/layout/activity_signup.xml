@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".SignupActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="20dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@drawable/uploadimg"
+                android:id="@+id/uploadImage"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/openGalery"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="Galeri"
+                    android:background="@drawable/button_type1"
+                    android:typeface="monospace"
+                    android:layout_marginLeft="45dp"
+                    android:textColor="#FFFFFF"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/openCamera"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:text="Kamera"
+                    android:background="@drawable/button_type1"
+                    android:typeface="monospace"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"/>
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_adsoyad"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/mezunapp_border"
+                android:padding="8dp"
+                android:hint="Ad Soyad"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <EditText
+                    android:id="@+id/signup_giristarih"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/mezunapp_border"
+                    android:padding="8dp"
+                    android:hint="Giriş Tarihi"
+                    android:drawableLeft="@drawable/baseline_date_range_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/grey" />
+                <EditText
+                    android:id="@+id/signup_mezuntarih"
+                    android:layout_width="155dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/mezunapp_border"
+                    android:padding="8dp"
+                    android:hint="Mezun Tarihi"
+                    android:drawableLeft="@drawable/baseline_date_range_24"
+                    android:drawablePadding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/grey" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_email"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/mezunapp_border"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey"/>
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_password"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mezunapp_border"
+                android:padding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"
+                android:drawablePadding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey"/>
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:id="@+id/signup_confirm"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mezunapp_border"
+                android:padding="8dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signup_button"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:text="Kayıt Ol"
+                android:textSize="18sp"
+                android:background="@drawable/button_type1"
+                android:layout_marginTop="10dp"
+                android:typeface="monospace"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

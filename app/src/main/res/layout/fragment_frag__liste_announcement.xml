@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addAnnouncement"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Duyuru Ekle"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_button_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:typeface="monospace"
+            android:textColor="#FFFFFF"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/arecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:scrollbars="vertical"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Password"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Şifre Değişir"
+            android:layout_gravity="end"
+            android:background="@drawable/button_type1"
+            android:layout_marginTop="16dp"
+            android:typeface="monospace"
+            android:textColor="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/editImage"
+                android:layout_width="133dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/uploadimg"
+                android:layout_gravity="center_horizontal"/>
+
+            <EditText
+                android:id="@+id/edit_adsoyad"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/mezunapp_border"
+                android:drawablePadding="8dp"
+                android:hint="Ad Soyad"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_giristarih"
+                    android:layout_width="155dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/mezunapp_border"
+                    android:drawablePadding="8dp"
+                    android:hint="Giriş Tarihi"
+                    android:inputType="date"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/edit_mezuntarih"
+                    android:layout_width="155dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/mezunapp_border"
+                    android:drawablePadding="8dp"
+                    android:hint="MezunTarihi"
+                    android:inputType="date"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/grey" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_egitimbilgisi"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="Eğitim Bilgileri"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <Spinner
+                android:id="@+id/edit_spinner_egitim_bilgileri"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:background="@drawable/mezunapp_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:prompt="@string/egitim_hint"
+                android:entries="@array/egitim_seviyeleri"
+                android:backgroundTint="#EDEDED"
+                android:textColorHint="@color/grey"
+                android:popupBackground="@color/grey"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_isbilgisi"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="Güncel İş Bilgileri"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/edit_spinner_ulkeler"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/mezunapp_border"
+                    android:padding="8dp"
+                    android:layout_marginTop="20dp"
+                    android:prompt="@string/egitim_hint"
+                    android:entries="@array/ulkeler"
+                    android:backgroundTint="#EDEDED"
+                    android:textColorHint="@color/grey"
+                    android:textColor="#000000"/>
+
+                <EditText
+                    android:id="@+id/edit_sehir"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/mezunapp_border"
+                    android:hint="Şehir"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/grey" />
+
+                <EditText
+                    android:id="@+id/edit_firma"
+                    android:layout_width="320dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/mezunapp_border"
+                    android:hint="Firma"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/grey" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_iletisimbilgi"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="Güncel İletişim Bilgileri"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/edit_mailbilgi"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mezunapp_border"
+                android:drawablePadding="8dp"
+                android:hint="İletişim Mail"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/edit_telnobilgi"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mezunapp_border"
+                android:drawablePadding="8dp"
+                android:hint="İletişim Telefon Numara"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_smedyabilgi"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="Sosyal Bilgileri (Tercihen)"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <EditText
+                android:id="@+id/edit_instagram"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mezunapp_border"
+                android:drawablePadding="8dp"
+                android:hint="İnstagram Profil Linki"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey" />
+            <EditText
+                android:id="@+id/edit_linkedin"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/mezunapp_border"
+                android:drawablePadding="8dp"
+                android:hint="Linkedin Profil Linki"
+                android:padding="8dp"
+                android:textColor="#000000"
+                android:textColorHint="@color/grey" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_button"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:text="Güncelle"
+                android:background="@drawable/button_type1"
+                android:typeface="monospace"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

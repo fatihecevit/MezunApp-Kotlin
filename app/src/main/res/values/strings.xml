@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">mezunAPP</string>
+    <string-array name="egitim_seviyeleri">
+        <item>-</item>
+        <item>Lisans</item>
+        <item>Yüksek Lisans</item>
+        <item>Doktora</item>
+    </string-array>
+    <string name="egitim_hint">Eğitim Seviyesi Seçiniz</string>
+    <string name="ulkeler_hint">Ülke Giriniz</string>
+    <string-array name="ulkeler">
+        <item>-</item>
+        <item>Türkiye</item>
+        <item>Amerika Birleşik Devletleri</item>
+        <item>Almanya</item>
+        <item>Japonya</item>
+        <item>İngiltere</item>
+        <item>Brezilya</item>
+        <item>Fransa</item>
+        <item>Rusya</item>
+        <item>Güney Kore</item>
+        <item>Meksika</item>
+        <item>İspanya</item>
+        <item>Endonezya</item>
+        <item>Hindistan</item>
+        <item>Kanada</item>
+        <item>Avustralya</item>
+        <item>Tayland</item>
+        <item>İtalya</item>
+        <item>Tayvan</item>
+        <item>Nijerya</item>
+        <item>Polonya</item>
+        <item>Güney Afrika</item>
+        <item>Kolombiya</item>
+        <item>Arjantin</item>
+        <item>Mısır</item>
+        <item>Suudi Arabistan</item>
+        <item>Malezya</item>
+        <item>Philippines</item>
+        <item>İran</item>
+        <item>Vietnam</item>
+        <item>Bangladeş</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
